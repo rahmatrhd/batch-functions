@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "batch-dev",
+    "development": "batch-dev",
+    "production": "batch-0"
+  }
+}
