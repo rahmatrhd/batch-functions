@@ -1,7 +1,9 @@
 {
   "name": "functions",
   "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint --project tsconfig.json",
+    "lint:fix": "npm run lint && npm run format",
     "build": "tsc",
     "serve": "npm run build && firebase serve --only functions",
     "shell": "npm run build && firebase functions:shell",
@@ -15,7 +17,9 @@
     "firebase-functions": "^2.2.0"
   },
   "devDependencies": {
-    "tslint": "^5.12.0",
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.2.2"
   },
   "private": true

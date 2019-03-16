@@ -1,1 +1,3 @@
-export { default as storeAuthenticatedUser } from "./users/storeAuthenticatedUser";
+export {
+  default as storeAuthenticatedUser
+} from "./users/storeAuthenticatedUser";
